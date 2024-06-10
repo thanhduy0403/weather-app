@@ -24,7 +24,7 @@ function App() {
         console.log(e);
       });
   }, [city]);
-  
+
   return (
     <>
       <div className="bg-slate-800 h-screen flex justify-center align-top">
@@ -35,7 +35,7 @@ function App() {
               stats={{
                 temp: weatherData.current.temp_c,
                 condition: weatherData.current.text,
-                isDay: weatherData.current.is_Day,    
+                isDay: weatherData.current.is_Day,
                 location: weatherData.location.name,
                 time: weatherData.location.localtime,
                 tx: weatherData.current.condition.text,
